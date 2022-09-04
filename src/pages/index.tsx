@@ -44,7 +44,7 @@ const Home = () => {
     const buttons = document.querySelectorAll(".your-class-page");
     const years = [2021, 2022, 2023];
 
-    console.log(buttons)
+    console.log(buttons);
 
     buttons.forEach((item, index) => {
       item.innerHTML = `${years[index]}`;
@@ -62,7 +62,6 @@ const Home = () => {
           classes: {
             pagination: "splide__pagination your-class-pagination",
             page: "splide__pagination__page your-class-page",
-
           },
         }}
       >
@@ -70,27 +69,7 @@ const Home = () => {
           className="splide__pagination splide__pagination--ltr your-class-pagination"
           role="tablist"
           aria-label="Select a slide to show"
-        >
-          <li role="presentation">
-            <button
-              className="splide__pagination__page is-active your-class-page"
-              type="button"
-              role="tab"
-              aria-controls="splide01-slide01"
-              aria-label="Go to slide 1"
-              aria-selected="true"
-            ></button>
-          </li>
-          <li role="presentation">
-            <button
-              className="splide__pagination__page your-class-page"
-              type="button"
-              role="tab"
-              aria-controls="splide01-slide02"
-              aria-label="Go to slide 2"
-            ></button>
-          </li>
-        </ul>
+        />
         <SplideTrack>
           <SplideSlide>
             <Image src="/1.jpg" alt="" width={800} height={800} />

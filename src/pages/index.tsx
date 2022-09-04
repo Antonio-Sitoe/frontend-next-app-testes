@@ -18,6 +18,7 @@ const Wrapper = styled.div`
       flex: 1;
       width: 100%;
       button {
+        display: none;
         width: 100%;
         cursor: pointer;
         padding: 1rem;
@@ -25,6 +26,9 @@ const Wrapper = styled.div`
     }
   }
   .your-class-page {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     border: none;
     border-bottom: 2px solid whitesmoke;

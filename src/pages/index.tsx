@@ -44,6 +44,8 @@ const Home = () => {
     const buttons = document.querySelectorAll(".your-class-page");
     const years = [2021, 2022, 2023];
 
+    console.log(buttons)
+
     buttons.forEach((item, index) => {
       item.innerHTML = `${years[index]}`;
     });
@@ -58,9 +60,9 @@ const Home = () => {
         options={{
           arrows: false,
           classes: {
-            splide: "",
             pagination: "splide__pagination your-class-pagination",
             page: "splide__pagination__page your-class-page",
+
           },
         }}
       >
@@ -71,7 +73,7 @@ const Home = () => {
         >
           <li role="presentation">
             <button
-              className="splide__pagination__page is-active"
+              className="splide__pagination__page is-active your-class-page"
               type="button"
               role="tab"
               aria-controls="splide01-slide01"
@@ -81,7 +83,7 @@ const Home = () => {
           </li>
           <li role="presentation">
             <button
-              className="splide__pagination__page"
+              className="splide__pagination__page your-class-page"
               type="button"
               role="tab"
               aria-controls="splide01-slide02"
